@@ -1,0 +1,10 @@
+# Saída do Maven
+target/
+
+# Arquivo gerado pelo programa
+resultado_analise.csv
+
+# IDEs
+.idea/
+*.iml
+.vscode/

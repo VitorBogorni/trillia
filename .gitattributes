@@ -1,0 +1,9 @@
+# Texto com quebra de linha normalizada no repositório
+* text=auto
+
+# O mvnw é script de shell: precisa de LF para rodar no Linux e no Mac
+mvnw text eol=lf
+*.cmd text eol=crlf
+
+# O CSV do desafio fica exatamente como foi entregue
+*.csv -text

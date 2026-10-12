@@ -93,7 +93,7 @@ public class Main {
         if (cabecalho == null) {
             throw new IllegalArgumentException("Arquivo de entrada vazio");
         }
-        if (!cabecalho.replace("﻿", "").equals(CABECALHO_ENTRADA)) {
+        if (!cabecalho.replace("\uFEFF", "").equals(CABECALHO_ENTRADA)) {
             throw new IllegalArgumentException("Cabeçalho diferente de " + CABECALHO_ENTRADA + ": " + cabecalho);
         }
     }

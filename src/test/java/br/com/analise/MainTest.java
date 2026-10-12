@@ -56,7 +56,7 @@ class MainTest {
     @Test
     void aceitaCabecalhoComCaractereInvisivelDoExcel() throws IOException {
         Path entrada = pasta.resolve("entrada.csv");
-        Files.writeString(entrada, "﻿" + CABECALHO_ENTRADA + "\n1,Fulano,30,5000.00,24,800,false\n");
+        Files.writeString(entrada, "\uFEFF" + CABECALHO_ENTRADA + "\n1,Fulano,30,5000.00,24,800,false\n");
 
         List<String> saida = processar(entrada);
 
